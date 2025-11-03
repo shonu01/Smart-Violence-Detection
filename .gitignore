@@ -1,3 +1,7 @@
+# ------------------------------
+# EXISTING RULES
+# ------------------------------
+
 # Virtual environment
 .venv/
 venv/
@@ -11,3 +15,54 @@ __pycache__/
 # Checkpoints or logs
 checkpoints/
 *.log
+
+# ------------------------------
+# NEW ADDITIONS FOR SECURITY
+# ------------------------------
+
+# Environment variables (API keys, DB credentials)
+.env
+
+# Local datasets and videos
+dataset/
+data/
+videos/
+*.mp4
+*.avi
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+
+# Model files (weights / saved models)
+*.h5
+*.pt
+*.pth
+*.pkl
+*.npy
+*.npz
+saved_model*/
+models/
+outputs/
+results/
+
+# Config or secret files
+config.json
+config.yaml
+config.yml
+settings.py
+db.py
+*.ini
+*.toml
+*.cfg
+
+# OS / Editor junk files
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# OPTIONAL: IDE / TOOL FILES
+# ------------------------------
+.vscode/
+.idea/
+*.code-workspace
